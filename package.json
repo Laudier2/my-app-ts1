@@ -1,19 +1,29 @@
 {
-  "name": "my-app-ts1",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node ./src/index.js"
+  "name": "api-tws",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "14.19.1",
+    "npm": "6.14.16",
+    "yarn": "1.22.17"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./bin/www"
+  },
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "mogoose": "0.0.1-security",
-    "mongoose": "^6.3.5"
+    "dotenv": "^16.0.0",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "mongoose": "^6.2.9",
+    "nodemon": "^2.0.15"
   }
 }
